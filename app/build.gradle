@@ -42,6 +42,9 @@ dependencies {
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-livedata:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-runtime:2.5.1"
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
@@ -53,8 +56,8 @@ dependencies {
     implementation("io.coil-kt:coil:2.2.2")
 
     //Paging 2
-    def paging_version = "2.1.2"
-    implementation "androidx.paging:paging-runtime:$paging_version"
+    implementation "androidx.paging:paging-runtime:3.0.1"
+
 
     //Refresh
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
