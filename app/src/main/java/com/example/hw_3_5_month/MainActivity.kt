@@ -23,16 +23,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun initClickers() {
         with(binding) {
-            recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
-                override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
-                    super.onScrollStateChanged(recyclerView, newState)
-                    if (!recyclerView.canScrollVertically(1)) {
-                        ++page
-                        addRequest()
-                    }
-                }
-            })
-
+            swipeContainer.setOnRefreshListener {
+               ++page
+                addRequest()
+                swipeContainer.isRefreshing = false
+            }
             btnChange.setOnClickListener {
                 ++page
                 addRequest()
@@ -82,4 +77,5 @@ class MainActivity : AppCompatActivity() {
 
         })
     }
+
 }
