@@ -1,5 +1,6 @@
-package com.example.hw_3_5_month
+package com.example.hw_3_5_month.remote
 
+import com.example.hw_3_5_month.PixaModel
 import retrofit2.http.GET
 import retrofit2.http.Query
 

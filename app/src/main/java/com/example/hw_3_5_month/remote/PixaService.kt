@@ -1,4 +1,4 @@
-package com.example.hw_3_5_month
+package com.example.hw_3_5_month.remote
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

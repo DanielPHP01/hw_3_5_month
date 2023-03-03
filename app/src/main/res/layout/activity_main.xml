@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/black"
-    tools:context=".MainActivity">
+    android:background="@color/white"
+    tools:context=".ui.MainActivity">
 
     <EditText
         android:id="@+id/et_search"
@@ -23,6 +23,13 @@
         android:backgroundTint="@color/teal_200"
         android:text="ENTER"
         android:textSize="30sp"/>
+    <Button
+        android:id="@+id/btn_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:text="food"
+        android:textSize="30sp"/>
 
     <Button
         android:id="@+id/btn_change"
@@ -31,6 +38,13 @@
         android:backgroundTint="@color/teal_200"
         android:text="cHange"
         android:textSize="30sp"/>
+  <ProgressBar
+    android:id="@+id/progress"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+
+    android:layout_gravity="center" />
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/swipeContainer"
@@ -43,6 +57,7 @@
         android:padding="20dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_android" />
+
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </LinearLayout>
